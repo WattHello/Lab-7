@@ -1,0 +1,129 @@
+.flexcontainer{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 0;
+    justify-content: left;
+}
+
+.flexcontainer > nav{
+    flex-direction: column;
+    color: white;
+    background-color: skyblue;
+}
+
+.flexcontainer > div{
+    background-color: pink;
+    border: 1px solid white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 60px;
+}
+
+.flexcontainer > main{
+    margin: 20px;
+}
+
+main > img{
+    float: right;
+}
+
+h1{
+    text-align: center;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+header{
+    background-color: cadetblue;
+    background-image: url(../images/lighthouselogo.jpg);
+    background-size: contain;
+    background-position: left center;
+    background-repeat: no-repeat;
+    padding: 10px;
+}
+
+h2{
+    color: cadetblue;
+}
+
+footer{
+    background-color: cadetblue;
+    text-align: center;
+    padding: 10px;
+}
+
+@media screen and (max-width: 1024px){
+    body{
+        margin: 0;
+    }
+    
+    .flexcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    
+    .flexcontainer > nav{
+        flex-direction: row;
+        color: white;
+        background-color: skyblue;
+        text-align: center;
+    }
+
+    .flexcontainer > div{
+        background-color: pink;
+        text-align: center;
+        padding-top: 20px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 60px;
+        margin: 15px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    h1{
+        color: navy;
+        text-align: left;
+    }
+
+    body{
+        margin: 0;
+    }
+    
+    .flexcontainer{
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: left;
+    }
+    
+    .flexcontainer > nav{
+        flex-direction: column;
+        background-color: skyblue;
+    }
+
+    .flexcontainer > div{
+        background-color: skyblue;
+        border: none;
+        text-align: center;
+        border-bottom: 1px solid white;
+        padding-top: 2px;
+        padding-bottom: 20px;
+        padding-left: 20px;
+        padding-right: 600px;
+        text-align: left;
+    }
+
+    header{
+        background-color: cadetblue;
+        background-image: url(../images/lighthouselogo.jpg);
+        background-size: contain;
+        background-position: right center;
+        background-repeat: no-repeat;
+        padding: 10px;
+    }
+
+    main > img{
+        display: none;
+    }
+}
